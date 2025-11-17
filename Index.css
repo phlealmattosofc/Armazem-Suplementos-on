@@ -1,0 +1,176 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#06b6d4;
+  --muted:#93a3b8;
+  --glass: rgba(255,255,255,0.04);
+  --radius:14px;
+  --max-width:1100px;
+  font-family: Inter, system-ui, sans-serif;
+  color-scheme: dark;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:linear-gradient(#071027,#081221);
+  color:#e6eef6;
+}
+.container{
+  width:clamp(300px,92%,var(--max-width));
+  margin:auto;
+  padding:28px;
+}
+
+/* Header */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{
+  width:56px;height:56px;
+  border-radius:12px;
+  display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--accent),#7c3aed);
+  font-weight:700;
+}
+
+.logo-img {
+  height: 70px;
+  width: auto;
+  margin-right: 15px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+nav a{
+  margin-left:16px;
+  color:var(--muted);
+  text-decoration:none;
+  font-weight:600;
+}
+nav .cta{
+  background:var(--accent);
+  padding:10px 16px;
+  border-radius:10px;
+  color:#02121a;
+}
+
+/* Hero */
+.hero{
+  display:grid;
+  grid-template-columns:1fr 360px;
+  gap:26px;
+  margin-top:20px;
+}
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr}
+}
+.hero-card{
+  background:var(--glass);
+  padding:26px;
+  border-radius:var(--radius);
+}
+.eyebrow{color:var(--accent);font-weight:700}
+.lead{color:var(--muted)}
+.features{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+.pill{
+  padding:8px 10px;
+  background:rgba(255,255,255,0.04);
+  border-radius:999px;
+}
+.btn{
+  background:var(--accent);
+  color:black;
+  padding:12px 18px;
+  border:0;
+  border-radius:12px;
+  cursor:pointer;
+  font-weight:700;
+}
+.btn.secondary{
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.1);
+  color:var(--muted);
+}
+
+/* Card lateral */
+.card-right{
+  background:var(--glass);
+  padding:18px;
+  border-radius:12px;
+}
+.stat{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:10px;
+}
+.badge{
+  padding:6px 10px;
+  border-radius:8px;
+  background:rgba(255,255,255,0.05);
+}
+
+/* Cursos */
+.grid{
+  margin-top:22px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.grid{grid-template-columns:1fr}}
+.course{
+  background:var(--card);
+  padding:16px;
+  border-radius:12px;
+}
+.course p{color:var(--muted)}
+
+/* Preços */
+.pricing{
+  display:flex;
+  gap:16px;
+  margin-top:20px;
+}
+@media(max-width:900px){.pricing{flex-direction:column}}
+.plan{
+  flex:1;
+  background:var(--glass);
+  padding:18px;
+  border-radius:12px;
+}
+.price{font-size:22px;margin:8px 0}
+
+/* Contato */
+.two-col{
+  margin-top:26px;
+  display:grid;
+  grid-template-columns:1fr 360px;
+  gap:20px;
+}
+@media(max-width:900px){.two-col{grid-template-columns:1fr}}
+form input, form textarea, form select{
+  width:100%;
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.08);
+  padding:10px;
+  border-radius:10px;
+  color:white;
+}
+label{color:var(--muted);font-size:14px}
+
+/* Rodapé */
+footer{
+  margin-top:32px;
+  padding-top:16px;
+  border-top:1px solid rgba(255,255,255,0.05);
+  display:flex;
+  justify-content:space-between;
+}
+.small{color:var(--muted)}

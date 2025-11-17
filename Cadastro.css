@@ -8,7 +8,7 @@
 html, body {
   height: 100%;
   width: 100%;
-  background-color: #09daff;
+  background-color: #02121a;
 }
 
 .container {
@@ -45,7 +45,7 @@ html, body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #077386;
+  background-color: #02121a;
   padding: 40px;
   border-radius: 16px;
   box-shadow: 0 0 20px #077386;

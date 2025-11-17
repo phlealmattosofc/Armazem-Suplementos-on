@@ -1,34 +1,310 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Login - Armazem Suplementos</title>
-  <link rel="stylesheet" href="Login.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paulo Mattos Informática — Aulas Profissionais</title>
+  <link rel="stylesheet" href="Index.css">
 </head>
+
 <body>
-
   <div class="container">
-    <div class="logo-side">
-      <img src="Imagens/Logo.png" alt="Logo Suplementos Power">
-    </div>
 
-    <div class="form-floating">
-      <h1>Login</h1>
-      <form>
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
-
-        <label for="senha">Senha</label>
-        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
-
-        <button type="submit"> <a href="Tela Inicial.html">Entrar</a></button>
-      </form>
-      <div class="register-link">
-        Ainda não tem uma conta? <a href="Cadastro.html">Cadastre-se</a>
+    <!-- HEADER -->
+    <header>
+      <div class="brand">
+        <img class="logo-img" src="Imagens/Logo2.png" alt="Logo Paulo Mattos Informática">
+        <div>
+          <h1>Paulo Mattos Informática</h1>
+          <div class="small">Aulas profissionais • Presencial & Online</div>
+        </div>
       </div>
-    </div>
-  </div>
 
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#precos">Preços</a>
+        <a href="Cadastro.html" class="cta">Inscreva-se</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-card">
+        <div class="eyebrow">Prático • Rápido • Focado no mercado</div>
+        <h2>Aprenda informática de verdade e transforme sua produtividade</h2>
+        <p class="lead">
+          Cursos profissionais com metodologia prática e suporte completo. Aprenda no seu ritmo — online ou presencial.
+        </p>
+
+        <div class="features">
+          <div class="pill">📘 Material incluso</div>
+          <div class="pill">🎓 Certificado</div>
+          <div class="pill">👨‍🏫 Aulas individuais ou em grupo</div>
+        </div>
+
+        <div class="signup">
+          <a href="Cadastro.html" class="btn">Quero me inscrever</a>
+          <a href="#cursos" class="btn secondary">Conhecer cursos</a>
+        </div>
+      </div>
+
+      <aside class="card-right">
+        <div class="stat">
+          <div><small>Avaliação dos alunos</small><br><strong>4.9/5</strong></div>
+          <div class="badge">+120 alunos formados</div>
+        </div>
+
+        <div class="stat"><div><small>Modalidades</small><br><strong>Online e Presencial</strong></div></div>
+
+        <div class="stat"><div><small>Regiões</small><br><strong>Vitória, Cariacica e Vila Velha</strong></div></div>
+
+        <hr>
+
+        <div class="small">Metodologia exclusiva baseada em prática real.</div>
+      </aside>
+    </section>
+
+    <!-- SOBRE O PROFESSOR -->
+    <section id="sobre" class="about">
+      <h2>Sobre o professor</h2>
+
+      <p>
+        Olá! Sou <strong>Paulo Henrique Mattos</strong>, especialista em informática aplicada,
+        criação de documentos profissionais, currículo e desenvolvimento de sistemas.
+        Ensino informática com foco em produtividade e evolução real, ajudando alunos a dominar
+        ferramentas essenciais para o trabalho, estudos e negócios.
+      </p>
+
+      <div class="about-grid">
+        <div>
+          <h3>🎓 Formação & Experiência</h3>
+          <ul>
+            <li>Técnico em Desenvolvimento de Sistemas (SENAI)</li>
+            <li>Graduando em Biblioteconomia (UFES)</li>
+            <li>5+ anos ensinando informática para jovens, adultos e empresas</li>
+            <li>Especialista em Office, Canva, Google e documentação profissional</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>💬 Minha missão</h3>
+          <p>
+            Tornar a tecnologia simples, prática e acessível para qualquer pessoa —
+            independentemente da idade ou nível de conhecimento.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section id="diferenciais" class="features-section">
+      <h2>Por que escolher minhas aulas?</h2>
+
+      <div class="grid-features enhanced">
+        <div class="feature-box">
+          <h3>🔥 Aulas 100% práticas</h3>
+          <p>Você aprende fazendo, com atividades reais usadas no dia a dia profissional.</p>
+        </div>
+
+        <div class="feature-box">
+          <h3>💡 Didática simples e direta</h3>
+          <p>Explicações passo a passo, sem complicação. Aprenda no seu ritmo.</p>
+        </div>
+
+        <div class="feature-box">
+          <h3>📱 Suporte pelo WhatsApp</h3>
+          <p>Dúvidas? Tem acompanhamento contínuo mesmo fora da aula.</p>
+        </div>
+
+        <div class="feature-box">
+          <h3>🏆 Certificação profissional</h3>
+          <p>Ao finalizar o plano completo você recebe certificado de conclusão.</p>
+        </div>
+
+        <div class="feature-box">
+          <h3>👥 Turmas reduzidas</h3>
+          <p>Mais foco, mais atenção e mais resultados para você.</p>
+        </div>
+
+        <div class="feature-box">
+          <h3>🧩 Conteúdo personalizado</h3>
+          <p>Cada aluno aprende de acordo com seu objetivo profissional.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURSOS OFERECIDOS -->
+    <section id="cursos">
+      <h2>Cursos oferecidos</h2>
+
+      <p class="section-subtitle">Cursos completos, atualizados e pensados para transformar sua produtividade digital.</p>
+
+      <div class="grid courses-highlight">
+        <article class="course highlight">
+          <h3>📘 Office Completo</h3>
+          <p>Word, Excel e PowerPoint — do básico ao avançado, com projetos reais.</p>
+        </article>
+
+        <article class="course highlight">
+          <h3>💻 Informática Básica</h3>
+          <p>Primeiros passos, internet, segurança digital, digitação e mais.</p>
+        </article>
+
+        <article class="course highlight">
+          <h3>🎨 Design com Canva</h3>
+          <p>Criação de artes, currículos, posts profissionais e identidade visual.</p>
+        </article>
+
+        <article class="course highlight">
+          <h3>📄 Currículo & Lattes</h3>
+          <p>Montagem completa, revisão, organização e otimização profissional.</p>
+        </article>
+
+        <article class="course highlight">
+          <h3>☁ Google Workspace</h3>
+          <p>Docs, Sheets, Slides, Drive, formulários e organização digital.</p>
+        </article>
+
+        <article class="course highlight">
+          <h3>🐍 Python para Iniciantes</h3>
+          <p>Fundamentos, lógica, automação e pequenos projetos guiados.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PLANOS E PREÇOS -->
+    <section id="precos">
+      <h2>Planos e preços</h2>
+      <p class="section-subtitle">Planos que cabem no seu bolso — escolha o que combina com sua meta.</p>
+
+      <div class="pricing enhanced-pricing">
+        <div class="plan">
+          <div class="badge">Básico</div>
+          <h3>Pacote Essencial</h3>
+          <p class="desc">Ideal para quem quer aprender o essencial rapidamente.</p>
+          <div class="price">R$ 200</div>
+          <ul>
+            <li>4 aulas completas</li>
+            <li>Material digital incluso</li>
+            <li>Suporte básico</li>
+          </ul>
+        </div>
+
+        <div class="plan featured">
+          <div class="badge">Mais popular</div>
+          <h3>Pacote Profissional</h3>
+          <p class="desc">O mais escolhido! Conteúdo completo e aprofundado.</p>
+          <div class="price">R$ 420</div>
+          <ul>
+            <li>10 aulas práticas</li>
+            <li>Projetos reais</li>
+            <li>Certificado incluso</li>
+            <li>Suporte ilimitado</li>
+          </ul>
+        </div>
+
+        <div class="plan">
+          <div class="badge">Empresas</div>
+          <h3>Treinamento Empresarial</h3>
+          <p class="desc">Para equipes que precisam evoluir juntas.</p>
+          <div class="price">Sob consulta</div>
+          <ul>
+            <li>Conteúdo personalizado</li>
+            <li>Relatório de desempenho</li>
+            <li>Atendimento exclusivo</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section id="depoimentos" class="testimonials">
+      <h2>O que os alunos dizem</h2>
+      <p class="section-subtitle">Resultados reais de pessoas que transformaram sua relação com a informática.</p>
+
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <p>⭐⭐⭐⭐⭐  
+          “As aulas do Paulo mudaram completamente minha produtividade. Hoje faço tudo no Word e Excel com facilidade!”</p>
+          <small>— Maria S.</small>
+        </div>
+
+        <div class="testimonial">
+          <p>⭐⭐⭐⭐⭐  
+          “A didática é excelente! Aprendi rápido e sem complicação. O professor explica de um jeito que ninguém explica.”</p>
+          <small>— João P.</small>
+        </div>
+
+        <div class="testimonial">
+          <p>⭐⭐⭐⭐⭐  
+          “Graças ao curso de Excel consegui meu primeiro emprego. Recomendo demais!”</p>
+          <small>— Ana V.</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="two-col" id="contato">
+      <div>
+        <h2>Horários & Turmas</h2>
+        <p class="small">Escolha o horário que melhor se encaixa no seu dia — flexível e sem burocracia.</p>
+
+        <h3>Disponibilidade</h3>
+        <ul class="small">
+          <li>Manhã — 8h às 12h</li>
+          <li>Tarde — 13h às 17h</li>
+          <li>Noite — 18h às 21h</li»
+        </ul>
+
+        <h3>Como funciona</h3>
+        <p class="small">
+          Você escolhe o curso → agenda sua primeira aula → recebe o material → começa imediatamente.
+        </p>
+
+        <h3>Meio de contato</h3>
+        <p class="small">
+          WhatsApp para matrícula e dúvidas:  
+          <strong>(27) 99999-9999</strong>
+        </p>
+      </div>
+
+      <aside>
+        <div class="plan contact-box">
+          <h3>Envie uma mensagem</h3>
+
+          <form>
+            <label>Nome</label>
+            <input type="text" placeholder="Seu nome">
+
+            <label>E-mail</label>
+            <input type="email" placeholder="seu@email.com">
+
+            <label>Curso desejado</label>
+            <select>
+              <option>Office</option>
+              <option>Informática Básica</option>
+              <option>Canva</option>
+              <option>Google Workspace</option>
+              <option>Python</option>
+              <option>Currículo & Lattes</option>
+            </select>
+
+            <label>Mensagem</label>
+            <textarea rows="4" placeholder="Digite sua mensagem"></textarea>
+
+            <button class="btn">Enviar</button>
+          </form>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      <div>© 2025 — Paulo Mattos Informática</div>
+      <div class="small">Vitória • ES — Cursos profissionais para impulsionar sua carreira</div>
+    </footer>
+
+  </div>
 </body>
 </html>
