@@ -7,7 +7,7 @@
 
 body, html {
   height: 100%;
-  background-color: #111;
+  background-color: #09daff;
 }
 
 .container {
@@ -19,7 +19,7 @@ body, html {
 
 .logo-side {
   width: 50%;
-  background-color: #1fd308; /* Altere aqui a cor de fundo da logo */
+  background-color: #ffffff; /* Altere aqui a cor de fundo da logo */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,13 +37,13 @@ body, html {
   top: 50%;
   left: 75%;
   transform: translate(-50%, -50%);
-  background-color: #000000;
+  background-color: #077386;
   padding: 40px;
   border-radius: 16px;
-  box-shadow: 0 0 20px #1fd308;
+  box-shadow: 0 0 20px #077386;
   width: 90%;
   max-width: 400px;
-  color: #1fd308;
+  color: #ffffff;
 }
 
 .form-floating h1 {
@@ -74,8 +74,8 @@ body, html {
   padding: 12px;
   border: none;
   border-radius: 8px;
-  background-color: #1fd308;
-  color: #000000;
+  background-color: #ffffff;
+  color: #077386;
   font-weight: bold;
   font-size: 16px;
   cursor: pointer;
@@ -83,12 +83,12 @@ body, html {
 }
 
 .form-floating button:hover {
-  background-color: #ffffff;
+  background-color: #b9b9b9;
 }
 
 .form-floating button a {
   text-decoration: none;
-  color: #000000;
+  color: #077386;
 }
 .register-link {
   text-align: center;

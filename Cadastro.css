@@ -8,7 +8,7 @@
 html, body {
   height: 100%;
   width: 100%;
-  background-color: #111;
+  background-color: #09daff;
 }
 
 .container {
@@ -20,7 +20,7 @@ html, body {
 
 .logo-side {
   width: 50%;
-  background-color: #03ff03;
+  background-color: hsl(0, 0%, 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,10 +45,10 @@ html, body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #000000;
+  background-color: #077386;
   padding: 40px;
   border-radius: 16px;
-  box-shadow: 0 0 20px #1fd308;
+  box-shadow: 0 0 20px #077386;
   width: 90%;
   max-width: 500px;
   color: #ffffff;
@@ -57,7 +57,7 @@ html, body {
 .form-floating h1 {
   text-align: center;
   margin-bottom: 30px;
-  color: #03ff03;
+  color: #ffffff;
 }
 
 .input-row {
@@ -81,8 +81,8 @@ html, body {
   padding: 12px;
   border: none;
   border-radius: 8px;
-  background-color: #333;
-  color: #fff;
+  background-color: #ffffff;
+  color: #000000;
   font-size: 16px;
 }
 
@@ -96,7 +96,7 @@ html, body {
 
 .checkbox-group input[type="checkbox"] {
   transform: scale(1.2);
-  accent-color: #03ff03;
+  accent-color: #ffffff;
 }
 
 .form-floating button {
@@ -105,8 +105,8 @@ html, body {
   padding: 12px;
   border: none;
   border-radius: 8px;
-  background-color: #03ff03;
-  color: #000;
+  background-color: #ffffff;
+  color: #077386;
   font-weight: bold;
   font-size: 16px;
   cursor: pointer;
@@ -114,7 +114,7 @@ html, body {
 }
 
 .form-floating button:hover {
-  background-color: #02cc02;
+  background-color: #d1cdcd;
 }
 
 .login-link {
@@ -124,7 +124,8 @@ html, body {
 }
 
 .login-link a {
-  color: #03ff03;
+  color: #ffffff;
+    font-weight: bold;
   text-decoration: none;
 }
 
