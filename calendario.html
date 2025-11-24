@@ -34,6 +34,38 @@
         </div>
     </div>
 
+     <!-- ÁREA PRINCIPAL -->
+    <main class="content">
+
+      <h1>Calendário de Eventos</h1>
+
+      <!-- FORMULARIO DE EVENTOS -->
+      <section class="event-form">
+        <h2>Adicionar Novo Evento</h2>
+
+        <form id="eventForm">
+          <label>Título do Evento:</label>
+          <input type="text" id="eventTitle" required>
+
+          <label>Data:</label>
+          <input type="date" id="eventDate" required>
+
+          <label>Horário:</label>
+          <input type="time" id="eventTime" required>
+
+          <label>Descrição:</label>
+          <textarea id="eventDescription" rows="3"></textarea>
+
+          <button type="submit">Adicionar Evento</button>
+        </form>
+      </section>
+
+      <!-- LISTA DE EVENTOS -->
+      <section class="event-list">
+        <h2>Eventos Cadastrados</h2>
+        <ul id="eventsContainer"></ul>
+      </section>
+
     <script src="js/admin.js"></script>
 </body>
 
