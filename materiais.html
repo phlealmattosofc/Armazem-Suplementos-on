@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Materiais - Admin</title>
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>ADMIN</h2>
+  <a href="index.html">🏠 Dashboard</a>
+  <a href="cadastro.html">👤 Cadastro</a>
+  <a href="calendario.html">📅 Calendário</a>
+  <a href="contato.html">📨 Contato</a>
+  <a href="cursos.html">📚 Cursos</a>
+  <a href="ava.html">🖥️ AVA</a>
+  <a href="materiais.html" class="active">📂 Materiais</a>
+  <a href="alunos.html">🎓 Alunos</a>
+</div>
+
+<div class="main">
+  <h1>Materiais</h1>
+
+  <div class="card">
+    <h3>Enviar Material</h3>
+
+    <label>Título</label>
+    <input type="text" placeholder="Ex: Apostila de Informática">
+
+    <label>Arquivo (PDF, Doc, PPT...)</label>
+    <input type="file">
+
+    <button onclick="sucesso('Material enviado!')">Enviar</button>
+  </div>
+
+  <div class="card">
+    <h3>Materiais Enviados</h3>
+    <p>Nenhum material encontrado.</p>
+  </div>
+</div>
+
+<script src="js/admin.js"></script>
+</body>
+</html>

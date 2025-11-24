@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cursos - Admin</title>
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>ADMIN</h2>
+  <a href="index.html">🏠 Dashboard</a>
+  <a href="cadastro.html">👤 Cadastro</a>
+  <a href="calendario.html">📅 Calendário</a>
+  <a href="contato.html">📨 Contato</a>
+  <a href="cursos.html" class="active">📚 Cursos</a>
+  <a href="ava.html">🖥️ AVA</a>
+  <a href="materiais.html">📂 Materiais</a>
+  <a href="alunos.html">🎓 Alunos</a>
+</div>
+
+<div class="main">
+  <h1>Cursos</h1>
+
+  <div class="card">
+    <h3>Cadastrar Novo Curso</h3>
+
+    <label>Título do Curso</label>
+    <input type="text" placeholder="Ex: Informática Básica">
+
+    <label>Descrição</label>
+    <textarea placeholder="Descrição completa do curso"></textarea>
+
+    <label>Carga Horária</label>
+    <input type="text" placeholder="40h, 60h, 80h...">
+
+    <button onclick="sucesso('Curso cadastrado!')">Salvar</button>
+  </div>
+
+  <div class="card">
+    <h3>Cursos Cadastrados</h3>
+
+    <p>Nenhum curso registrado ainda.</p>
+  </div>
+
+</div>
+
+<script src="js/admin.js"></script>
+</body>
+</html>

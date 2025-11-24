@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>AVA - Admin</title>
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>ADMIN</h2>
+  <a href="index.html">🏠 Dashboard</a>
+  <a href="cadastro.html">👤 Cadastro</a>
+  <a href="calendario.html">📅 Calendário</a>
+  <a href="contato.html">📨 Contato</a>
+  <a href="cursos.html">📚 Cursos</a>
+  <a href="ava.html" class="active">🖥️ AVA</a>
+  <a href="materiais.html">📂 Materiais</a>
+  <a href="alunos.html">🎓 Alunos</a>
+</div>
+
+<div class="main">
+  <h1>AVA - Ambiente Virtual de Aprendizagem</h1>
+
+  <div class="card">
+    <h3>Adicionar Conteúdo ao AVA</h3>
+
+    <label>Título</label>
+    <input type="text" placeholder="Ex: Aula 01 - Introdução">
+
+    <label>Tipo</label>
+    <select>
+      <option>Vídeo</option>
+      <option>PDF</option>
+      <option>Slide</option>
+      <option>Link Externo</option>
+      <option>Atividade</option>
+    </select>
+
+    <label>URL / Arquivo</label>
+    <input type="text" placeholder="https://...">
+
+    <button onclick="sucesso('Conteúdo adicionado ao AVA!')">Adicionar</button>
+  </div>
+
+  <div class="card">
+    <h3>Conteúdos no AVA</h3>
+    <p>Nenhum conteúdo registrado</p>
+  </div>
+</div>
+
+<script src="js/admin.js"></script>
+</body>
+</html>

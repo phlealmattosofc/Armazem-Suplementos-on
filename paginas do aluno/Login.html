@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Armazem Suplementos</title>
+  <link rel="stylesheet" href="Login.css" />
+</head>
+<body>
+
+  <div class="container">
+    <div class="logo-side">
+      <img src="Imagens/Logo.png" alt="Logo Suplementos Power">
+    </div>
+
+    <div class="form-floating">
+      <h1>Login</h1>
+      <form>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+<br><br>
+        <label for="senha">Senha</label>
+
+        <div class="password-container">
+          <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+          <div class="checkbox-area">
+            <input type="checkbox" id="verSenha" onclick="toggleSenha()">
+            <label for="verSenha">Mostrar</label>
+          </div>
+        </div>
+
+        <button type="submit">
+          <a onclick="validarLogin()" href="Tela Inicial.html">Entrar</a>
+        </button>
+
+      </form>
+
+      <div class="register-link">
+        Ainda não tem uma conta? <a href="Cadastro.html">Cadastre-se</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  function toggleSenha() {
+    const campo = document.getElementById("senha");
+    const check = document.getElementById("verSenha");
+
+    if (check.checked) {
+      campo.type = "text";
+    } else {
+      campo.type = "password";
+    }
+  }
+  </script>
+
+  <script>
+// Defina aqui o login válido
+const emailCorreto = "teste@email.com";
+const senhaCorreta = "Senha123!";
+
+function validarLogin() {
+  const email = document.getElementById("email").value.trim();
+  const senha = document.getElementById("senhaLogin").value.trim();
+  const aviso = document.getElementById("avisoLogin");
+
+  // Verifica e-mail primeiro
+  if (email !== emailCorreto) {
+    aviso.innerHTML = "E-mail incorreto ❌";
+    aviso.classList.remove("ok");
+    return;
+  }
+
+  // Verifica a senha
+  if (senha !== senhaCorreta) {
+    aviso.innerHTML = "Senha incorreta ❌";
+    aviso.classList.remove("ok");
+    return;
+  }
+
+  // Se chegou aqui → tudo correto
+  aviso.innerHTML = "Login realizado com sucesso ✔";
+  aviso.classList.add("ok");
+
+  // Opcional: redirecionar após 1 segundo
+  // setTimeout(() => window.location.href = "home.html", 1000);
+}
+</script>
+
+
+</body>
+</html>

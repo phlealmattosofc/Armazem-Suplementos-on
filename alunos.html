@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Alunos - Admin</title>
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>ADMIN</h2>
+  <a href="index.html">🏠 Dashboard</a>
+  <a href="cadastro.html">👤 Cadastro</a>
+  <a href="calendario.html">📅 Calendário</a>
+  <a href="contato.html">📨 Contato</a>
+  <a href="cursos.html">📚 Cursos</a>
+  <a href="ava.html">🖥️ AVA</a>
+  <a href="materiais.html">📂 Materiais</a>
+  <a href="alunos.html" class="active">🎓 Alunos</a>
+</div>
+
+<div class="main">
+  <h1>Alunos</h1>
+
+  <div class="card">
+    <h3>Cadastrar Aluno</h3>
+
+    <label>Nome</label>
+    <input type="text">
+
+    <label>E-mail</label>
+    <input type="email">
+
+    <label>Curso Matriculado</label>
+    <select>
+      <option>Nenhum curso cadastrado</option>
+    </select>
+
+    <button onclick="sucesso('Aluno cadastrado!')">Cadastrar</button>
+  </div>
+
+  <div class="card">
+    <h3>Lista de Alunos</h3>
+    <p>Nenhum aluno registrado.</p>
+  </div>
+
+</div>
+
+<script src="js/admin.js"></script>
+</body>
+</html>
